@@ -36,3 +36,38 @@ img {
 button {
   font: inherit;
 }
+ul {
+  list-style-type: none;
+}
+
+header,
+footer {
+  padding: 0 50px;
+}
+/* обнуляем нижнее подчеркивание у ссылок */
+.footer__menu-link,
+.address__link,
+.header__link {
+  text-decoration: none;
+}
+/* ставим нижнюю границу ссылкам */
+.header__link,
+.address__link,
+.footer__menu-link {
+  border-bottom: 1px solid black;
+}
+/* убираем по макету где нет оформления ссылок*/
+.header__link_active,
+.footer__menu-link_active,
+.address__link_active {
+  border-bottom: none;
+}
+
+.title-h2 {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.no-letter-spacing {
+  letter-spacing: 0;
+}
