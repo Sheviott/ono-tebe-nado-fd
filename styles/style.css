@@ -1,4 +1,31 @@
 /* место для вашего кода */
+header,
+footer {
+  padding: 0 50px;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* ставим нижнюю границу ссылкам */
+.header__link,
+.address__link,
+.footer__menu-link {
+  border-bottom: 1px solid black;
+}
+/* убираем у активных ссылок оформление*/
+.header__link_active,
+.footer__menu-link_active {
+  border-bottom: none;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.no-letter-spacing {
+  letter-spacing: 0;
+}
 
 header {
   display: grid;
@@ -38,7 +65,6 @@ header {
   font-style: normal;
   line-height: 1.35;
 }
-
 /** СЕКЦИЯ ГЛАВНОЙ СТРАНИЦЫ */
 
 .cover {
@@ -48,6 +74,7 @@ header {
   color: white;
   text-transform: uppercase;
   background-image: url(../images/cover.jpg);
+  background-position: center;
   background-size: cover;
 }
 .overlay {
@@ -100,6 +127,7 @@ header {
   text-align: center;
   text-transform: uppercase;
   background-color: transparent;
+  cursor: pointer;
 }
 
 /** СЕКЦИЯ ЛОТОВ */
@@ -184,6 +212,7 @@ header {
 .about__column {
   padding-top: 98px;
 }
+
 .about__logo {
   display: flex;
   justify-self: center;
@@ -200,8 +229,12 @@ header {
   margin-bottom: 100px;
 }
 .about__text {
+  margin-bottom: 28px;
   font-size: 20px;
-  line-height: 25px;
+  line-height: 1.2;
+}
+.about__text:last-child {
+  margin-bottom: 0;
 }
 
 .footer {
