@@ -45,16 +45,12 @@ footer {
   padding: 0 50px;
 }
 /* обнуляем нижнее подчеркивание у ссылок */
-.footer__menu-link,
-.address__link,
-.header__link {
-  text-decoration: none;
-}
 /* ставим нижнюю границу ссылкам */
 .header__link,
 .address__link,
 .footer__menu-link {
   border-bottom: 1px solid black;
+  text-decoration: none;
 }
 /* убираем по макету где нет оформления ссылок*/
 .header__link_active,
